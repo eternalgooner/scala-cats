@@ -29,15 +29,17 @@ object ValidatedDemo extends App {
       country = Ireland
     )
   )
-val validResult2 = Validator.validatePerson2(
-  name = "David",
-  age = 39,
-  address = Address(
-    street = "New Street",
-    county = Dublin,
-    country = Ireland
+
+  //using Validated returns valid type with valid data and 1 or more errors with invalid data
+  val validResult2 = Validator.validatePerson2(
+    name = "David",
+    age = 39,
+    address = Address(
+      street = "New Street",
+      county = Dublin,
+      country = Ireland
+    )
   )
-)
 
   val invalidResultWith2Errors2: ValidationResult[Model.Person] = Validator.validatePerson2(
     name = "",
