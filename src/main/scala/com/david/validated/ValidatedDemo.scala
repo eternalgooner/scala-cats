@@ -6,6 +6,8 @@ import com.david.validated.Validator.ValidationResult
 /**
  * @author David Mackessy
  * @date 29/03/2021
+ *
+ *      Using Validated is great for validating data & accumulating errors when they occur
  **/
 object ValidatedDemo extends App {
 
